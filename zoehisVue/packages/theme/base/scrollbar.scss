@@ -1,0 +1,20 @@
+@charset "UTF-8";
+.zoehis_scrollbar{overflow: hidden;position: relative;
+&:active>.zoehis_scrollbar__bar.zoehis_scrollbar__bar_show,&:focus>.zoehis_scrollbar__bar.zoehis_scrollbar__bar_show,&:hover>.zoehis_scrollbar__bar.zoehis_scrollbar__bar_show{opacity: 1;z-index:auto;}
+  .zoehis_scrollbar__wrap{overflow: scroll;}
+  .zoehis_scrollbar__wrap--hidden-default::-webkit-scrollbar{  width: 0;  height: 0;}
+}
+.zoehis_scrollbar__bar{position: absolute;right: 1px;bottom: 1px;z-index: -1;border-radius: 4px;opacity: 0;transition: opacity 340ms ease-out;
+  .zoehis_scrollbar__thumb{position: relative;display: block;width: 0;height: 0;cursor: pointer;border-radius: inherit;background-color:$SCROLLBAR;transition: .3s background-color;
+   &:hover{background-color: $SCROLLBARHOVE;}
+}
+
+&.is_horizontal{height: 12px;left: 2px;
+  &>div {height: 100%;}
+}
+&.is_vertical{width: 12px;top:2px;
+  &>div {width: 100%}
+}
+}
+
+

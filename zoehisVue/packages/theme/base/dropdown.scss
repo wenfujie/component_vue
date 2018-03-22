@@ -1,0 +1,21 @@
+.zoehis_dropdown{
+  display: inline-block; position: relative; color: $FONTMAIN; font-size: $FONTMAINS; cursor: pointer; font-family: $FONTSUN;
+}
+.zoehis_dropdown_iDistance{padding-left: 5px; color: $MAINNOEDITOR; font-size: $ICONFONTMIN;}
+
+//dropdown-item组件的scss样式
+.zoehis_dropdown_item{
+  list-style-type: none; line-height: 30px; font-size: $FONTMAINS;  white-space: nowrap;
+  overflow: hidden;  color: $FONTMAIN;  box-sizing: border-box; padding: 0 5px; font-family: $FONTSUN;
+  cursor: pointer;
+  &:hover{background: $MAINCOLOR; color: $FONTWHITE;}
+  &.zoehis_is_disabled{background: $MAINBG; color: $MAINNOEDITOR;}
+  &.zoehis_is_divided{  border-top: 1px solid $SELECTITEMBORDER;}
+}
+
+//dropdown-menu组件的scss样式
+.zoehis_dropdown_menu{
+  margin: 5px 0; background-color: $MAINBG; border: 1px solid $MAINBORDERLINES;
+  box-shadow: 0 0 8px $MAINBORDERLINES;  padding: 1px 0;  z-index: 10; position: absolute;
+  top: 0; left: 0; overflow: hidden;
+}

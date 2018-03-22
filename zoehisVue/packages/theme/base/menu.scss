@@ -1,0 +1,40 @@
+.zoehis_menu{
+  display: inline-block;  line-height: 33px;  padding: 0 14px;  margin-right: 5px;  cursor: pointer;  float: left;
+    border-top: 2px solid transparent;  border-bottom: none;
+  &.zoehis_check1{background-color: $MENUAIDE; border-top: 2px solid $MAINPROMPT;  border-left: 1px solid $MAINBORDERLINES;
+    border-right: 1px solid $MAINBORDERLINES; font-weight: bold;}
+  &.zoehis_menu_hover{
+    &:hover{background-color: $MENUAIDE; border-top: 2px solid $MAINPROMPT;  border-left: 1px solid $MAINBORDERLINES;
+      border-right: 1px solid $MAINBORDERLINES;}
+  }
+
+}
+.zoehis_menu_group{
+  border-bottom: 1px solid $MAINBORDERLINES; padding: 3px 10px 0 10px;
+  &.zoehis_menu_group_bg{background-color: $MENUAIDE;}
+  &.zoehis_menu_group_style3{padding: 0 10px 0 10px;}
+}
+.zoehis_menu_font{
+  font-size: $FONTMAINS;
+}
+.zoehis_menu_group_content{
+  overflow: hidden; position: relative; margin-bottom: -1px;
+}
+.zoehis_menu_style2{
+  display: inline-block;  line-height: 24px;  padding: 0 14px;  margin-right: 5px;  cursor: pointer;  float: left;
+  border: 1px solid $FONTWHITE;  border-bottom: none;  font-size: $FONTINSTRUCTIONS;
+  &.zoehis_menu_type2{ border-color: $MENUAIDE;}
+  &.zoehis_check2{background-color: $FONTWHITE; border: 1px solid $MAINLEVELTBORDER; border-bottom-color: $FONTWHITE; font-weight: bold;}
+  &.zoehis_menu_hover{
+    &:hover{background-color: $FONTWHITE;border: 1px solid $MAINLEVELTBORDER; border-bottom-color: $FONTWHITE;}
+  }
+}
+.zoehis_menu_style3{
+  display: inline-block;  line-height: 33px;  padding: 0 16px;  margin-right: 0;  cursor: pointer;  float: left; border: none;
+  color: $FONTRPTITLE;
+  &.zoehis_menu_type3{}
+  &.zoehis_check3{background-color: $FONTWHITE; border-bottom: 2px solid $FONTFOCUS; color: $FONTFOCUS; font-weight: bold; padding: 0 14px;}
+  &.zoehis_menu_style3_hover{
+    &:hover{background-color: $FONTWHITE; border-bottom: 2px solid $FONTFOCUS; color: $FONTFOCUS; font-weight: bold;}
+  }
+}

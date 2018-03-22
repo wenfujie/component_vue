@@ -1,0 +1,39 @@
+.zoehis_switch{
+  position: relative;display: inline-block;height: 22px;line-height: 22px;font-size:$FONTMAINS;vertical-align: middle;user-select: none;cursor: pointer;
+  &.is_checked{
+    .zoehis_switch_core{
+      background-color: $FONTFOCUS;border-color: $FONTFOCUS;
+      .zoehis_switch_button{
+        background-color: $FONTWHITE;
+      }
+    }
+  }
+  &.is_disabled{
+    cursor: not-allowed;
+    .zoehis_switch_core{
+      background-color: $MAINNOEDITOR;border-color: $MAINNOEDITOR;cursor: not-allowed;
+      .zoehis_switch_button{
+        background-color: $FONTWHITE;
+      }
+    }
+  }
+  .zoehis_switch_input{
+    display: none;
+  }
+  .zoehis_switch_core{
+    position: relative;display: inline-block;box-sizing: border-box;margin: 0;height: 100%;background: $FONTWHITE;border: 1px solid $MAINSHADOW;transition: border-color .3s, background-color .3s;border-radius: 12px;
+    .zoehis_switch_button{
+      position: absolute;top: 0;left: 0;width: 16px;height: 16px;background-color: $MAINSHADOW;border-radius: 100%;transition: all .3s;
+    }
+  }
+  .zoehis_switch_label{
+    position: absolute;top: 0;left: 0;height: 100%;
+    .zoehis_switch_ontext{
+      position: absolute;left: 10px;color: $FONTWHITE;
+    }
+    .zoehis_switch_offtext{
+      position: absolute;right: 10px;color: $FONTWHITE;
+    }
+  }
+
+}

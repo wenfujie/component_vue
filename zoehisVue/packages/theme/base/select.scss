@@ -1,0 +1,24 @@
+.zoehis_select{
+  display: inline-block; position: relative; font-size: $FONTMAINS; color: $FONTMAIN; font-family: $FONTARIAL,$FONTSUN;
+  .zoehis_input .zoehis_input_icon.z_dropD_form{ font-size: $FONTINSTRUCTIONS; color: $FONTAUXILIARY; }
+  .zoehis_over .zoehis_input_icon.z_dropD_form{ color: $MAINCOLOR; }
+}
+.zoehis_select_dropdown{
+  font-size: $FONTMAINS; color: $FONTMAIN; font-family: $FONTARIAL,$FONTSUN;
+  box-shadow: $SHADOWVALUE; margin: 3px 0; box-sizing: border-box; background-color: $MAINBG;
+  .zoehis_select_dropdown__wrap{max-height: 249px;}
+  .zoehis_scrollbar__view{
+    margin: 0; padding: 0;
+  }
+  .zoehis_select_dropdown__item{
+    margin: 0; list-style: none; height: $SELECTITEMHEIGHT; font-size: $FONTMAINS; padding: 6px 15px 6px 5px; position: relative; line-height: $SELECTITEMHEIGHT - 12;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-bottom: 1px solid $SELECTITEMBORDER; color: $FONTMAIN;
+    box-sizing: border-box; cursor: pointer; float: none;
+    &.zoehis_hover{background-color: $MAINHOVER;}
+    &.zoehis_selected{color: $FONTWHITE; background-color: $MAINCOLOR;}
+  }
+  .zoehis_select_dropdown__empty{
+    margin: 0; padding: 0; line-height: 33px; height: 33px;
+    text-align: center; background: $MAINAUXILIARY; color: $FONTAUXILIARY; font-weight: normal;
+  }
+}

@@ -1,0 +1,107 @@
+//input与textarea的公共部分
+.ZoehisInputTextArea{
+  font-size: $FONTMAINS; display: inline-block; text-indent: 0; position: relative; vertical-align: bottom; min-height: 24px;
+}
+
+.zoehis_input{
+  @extend .ZoehisInputTextArea;
+  &.zoehis_over {
+    .zoehis_input_icon.zoehis_close{color: $MAINCOLOR;}
+    .zoehis_input_inner{border-bottom: 1px solid $MAINCOLOR;}
+  }
+  &.zoehis_error {
+    .zoehis_input_inner{border-bottom: 1px solid $MAINURGENT;}
+  }
+  &.zoehis_disabled{
+    .zoehis_input_inner{border-bottom: none; background:transparent; color: $FONTMAIN;}
+  }
+  //为空时的线
+  &.zoehis_line:before{
+    content:"-"; position: absolute; top: 50%; left: 9px; line-height: 1px;
+  }
+  .zoehis_input_inner{
+    background: transparent; font-size: $FONTMAINS;font-family: $FONTARIAL,$FONTSUN;
+    outline: 0; padding: 0 5px; margin: 0; border: none; height: 100%; min-height: 24px; width: 100%; box-sizing: border-box; border-bottom: 1px solid $MAINBORDERLINES;
+    &::-webkit-input-placeholder {color: $MAINNOEDITOR;}
+    &:-moz-placeholder {color: $MAINNOEDITOR;}
+    &:-ms-input-placeholder {color: $MAINNOEDITOR;}
+  }
+  .zoehis_input_icon{
+    position: absolute; right: 0; bottom: 0; top: 50%; height: 24px; margin-top: -12px; line-height: 24px; text-align: center; width: 20px; font-size:$ICONFONTNORMAL; color: $MAINCOLOR; cursor: pointer;
+    + .zoehis_input_inner{padding-right: 20px;}
+    &.zoehis_close{font-size: $FONTINSTRUCTIONS; color: $FONTMAIN;}
+  }
+}
+
+//表格里的为空横线样式
+table tbody>tr td .zoehis_line:before{left:50%;}
+
+//多行文本框
+.zoehis_textarea{
+  @extend .ZoehisInputTextArea;
+  .zoehis_textarea_inner{
+    resize: none; font-size: $FONTMAINS;
+    outline: 0; padding: 2px 5px; margin: 0; height: 100%; width: 100%; box-sizing: border-box; border: 1px solid $MAINBORDERLINES; line-height: 18px; vertical-align: bottom;
+    &::-webkit-input-placeholder {color: $MAINNOEDITOR;}
+    &:-moz-placeholder {color: $MAINNOEDITOR;}
+    &:-ms-input-placeholder {color: $MAINNOEDITOR;}
+    &:hover,&:focus{border: 1px solid $MAINCOLOR;}
+    &.zoehis_disabled{background:$MAINBG;}
+
+    //滚动条
+    &::-webkit-scrollbar-thumb{ background:$MAINBORDERLINES;border-radius:3px;
+      &:hover{background: $FONTRPTITLE; cursor: pointer;}
+    }
+    &::-webkit-scrollbar{width: 6px;}
+  }
+  .zoehis_textarea_icon{
+    display: none;
+    position: absolute; right: 2px; top: 2px; font-size:$ICONFONTMIN; font-weight: bold; color: $MAINCOLOR; cursor: pointer;
+    + .zoehis_textarea_inner{padding-right: 10px;}
+  }
+  &.zoehis_over{
+    .zoehis_textarea_icon{
+      display: block;
+    }
+    .zoehis_textarea_inner{border-color:$MAINCOLOR;}
+  }
+  &.zoehis_disabled{
+    .zoehis_textarea_inner{ background:$MAINBG; border-color:$MAINBORDERLINES; color: $FONTMAIN;}
+  }
+}
+.zoehis_input_error_tip{
+  color: $ERRORCOLOR;
+  border: 1px solid $TIPBORDERCOLOR; min-width: 115px;
+  background: $TIPBGCOLOR; font-size: $FONTINSTRUCTIONS; line-height: 14px;
+  position: absolute; top: -24px; left: 0; padding: 5px 7px; margin: 5px 0; box-sizing: border-box;
+
+  &[x-placement='bottom-start']{
+      &:before{
+        border-color: transparent transparent $TIPBORDERCOLOR;
+        bottom: auto; top: -13px;
+      }
+      &:after{
+        border-color: transparent transparent $TIPBGCOLOR;
+        bottom: auto; top: -12px;
+      }
+  }
+}
+.zoehis_input_error_tip:before,.zoehis_input_error_tip:after{
+  content: "";
+  display: block;
+  border-width: 6px;
+  position: absolute;
+  bottom: -13px;
+  left: 9px;
+  border-style: solid dashed dashed;
+  border-color: $TIPBORDERCOLOR transparent transparent;
+  font-size: 0;
+  line-height: 0;
+}
+.zoehis_input_error_tip:after{
+  bottom:-12px;
+  border-color:$TIPBGCOLOR transparent transparent;
+}
+
+
+

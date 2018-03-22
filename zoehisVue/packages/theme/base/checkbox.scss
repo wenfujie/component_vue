@@ -1,0 +1,34 @@
+//复选图标
+.checkBoxForm{
+  cursor: pointer;
+  background: $MAINBG; width: $ICONFONTNORMAL; height: $ICONFONTNORMAL; line-height: $ICONFONTNORMAL; color: $MAINCOLOR; font-size: $ICONFONTNORMAL; font-weight: normal; display: inline-block; border-radius: 4px;
+}
+
+.zoehis_checkbox{
+  text-indent: 0; line-height: 16px;
+  >span{vertical-align: text-top;}
+  + .zoehis_checkbox{margin-left: 15px;}
+
+  .z_checkboxS_form{
+    @extend .checkBoxForm;
+    &.zoehis_disabled{ color: $MAINBORDERLINES; border-radius: 4px;}
+  }
+  .z_checkbox_form{
+    @extend .checkBoxForm;
+    &.zoehis_disabled{ color: $MAINNOEDITOR; background: $MAINAUXILIARY;}
+  }
+  .zoehis_checkbox_input+span{margin-left: 8px;}
+  &.zoehis_focus{
+    text-indent: 0;
+    .zoehis_checkbox_input{
+      outline: 1px dotted $MAINSHADOW;
+    }
+  }
+  .zoehis_checkbox_original{position: absolute;
+    opacity: 0; outline: none;  margin: 0; width: 0; height: 0; left: -999px;
+  }
+}
+
+
+
+

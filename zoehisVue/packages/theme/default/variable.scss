@@ -1,0 +1,122 @@
+//颜色变量
+//主要颜色
+$MAINNAV:#008AC3;//导航栏颜色
+$MAINCOLOR:#00A3E7;//主色调，icon，按钮，响应色
+$MAINPROMPT:#FDB043;//小面积使用，用于特殊提醒，突出响应时
+$MAINBG:#FFF;//大面积使用，用于内容背景色
+$MAINSECNAV:#ECECEC;//二级菜单背景颜色
+//辅助颜色
+$MAINLEFTNAV:#00709E;//左侧导航栏选中状态颜色
+$MAINHOVER:#E5F7FF;//悬停，点击，响应色
+$MAINMOREBG:#ECF9FF;//医嘱表格查看更多时底色,内容可编辑
+$MAINNOEDITOR:#C0C0C0;//无编辑状态下划线,箭头颜色,无法点击ICON色
+$MAINBORDERLINES:#DCDCDC;//表格边框和所有的分割线颜色
+$MENUAIDE:#E9E9E9;//通用框架二级底色，三级菜单底色
+$MAINAUXILIARY:#F4F4F4;//表头，弹窗头部底色
+$MAINMASK:#EEE;//辅助类的背景颜色
+$MAINBACKGROUND:#F9F9F9;//辅助类的背景颜色(分两种，一种是纯白色，一种是f9f9f9)
+$MAINLEVELTTITLE:#E9E9E9;//三级四级表头底色
+$MAINLEVELTBORDER:#C6C6C6;//三级四级表头边框颜色
+$SCROLLBAR:#BDBDBD;//滚动条颜色
+$SCROLLBARHOVE:#808080;//滚动条移上去的颜色
+//特殊颜色
+$MAINURGENT:#FF0000;//用于说明处的加急和皮试/作废医嘱阳性文字
+$MAINPROMPTS:#8CBD13;//弹窗提醒图标色
+$MAINREDNOTIP:#FEECEF;//已发送未执行提示底色
+$MAINNEWPROMPT:#FFFDF4;//新开提示底色
+$MAINSHADOW:#A7A7A7;//弹窗或者按钮的阴影颜色
+$MAINTOOLBAR:#FCFCFC;//工具条的背景色
+$HOVERTIPBG:#259FD2;//悬浮提示的背景色
+//文字颜色
+$FONTFOCUS:#00A3E7;//文字响应色
+$FONTMAIN:#000000;//主字体色
+$FONTRPTITLE:#808080;//二级文字信息，三四级菜单未响应时，弹窗标题
+$FONTAUXILIARY:#C0C0C0;//辅助，次要的文字信息（无法点击ICON名称色）
+$FONTWHITE:#FFFFFF;//反白文字
+$FONTPASS:#16A75F;//代表一些通过类的含义
+$FONTTOTAL:#EB9D38;//代表金额总数什么的
+//文字规范
+//中文字体：宋体
+$FONTBIGTITLES:24PX;//大标题
+$FONTMIDDLE:20PX;  //有些界面工具条用得到
+$FONTTIMEICON:18PX;//新版时间组件的图标大小
+//删掉了，同一用下面的 $FONTMAINCONTENTS:16PX;//主要的内容文字（医嘱表格内容等）
+//$FONTMAINS:14PX;//主要的内容文字（标题，菜单，内容）
+$FONTMAINS:16PX;//主要的内容文字（标题，菜单，内容）
+//$FONTINSTRUCTIONS:12PX;//说明性文字（为了界面协调也可用于其他处、表头也是12号）
+$FONTINSTRUCTIONS:14PX;//说明性文字（为了界面协调也可用于其他处、表头也是12号）
+$FONTSUPERBTN:54PX; //有些超大按钮图标
+//$FONTSUN:宋体;
+$FONTSUN:"Microsoft YaHei";
+$FONTARIAL:Arial;
+$AIDFONTARIAL:initial; //辅助性字体
+
+/***** 页面底部  ********/
+$BOTTOMHEIGHT:48px;//页面底部高度,未加边框
+
+/*****医嘱提示*******/
+$TIPSNAV:#FFF6CF;//医嘱提示导航栏背景色
+$MASKBG:#000;//遮罩背景色
+$BOXSHADOW:rgba(0, 0, 0, 0.26);//弹窗的阴影26%的黑色
+
+/************ ZOEUI表单样式 *************/
+$HEIGHT:25PX;
+$COLOR:#484848;
+$SPECIALCOLOR:#3FCE00; //特殊的字体颜色
+$INPUTDISABLECOLOR:#666; //表单输入框不可以编辑的的颜色
+
+/***** 按钮样式  ********/
+$BIGBTNHEIGHT:28PX;//大按钮的高度（不包括边框）
+$SMALLBTNHEIGHT:22PX;//小按钮的高度（不包括边框）
+$BOTTONACTIVE:#248DC1;//按钮点击时的样式
+$BOTTONDISABLED:#B2B2B2;//按钮不可点击的字体颜色
+
+/***** ZOEUI表格样式  ********/
+$BORDERCOLOR:#E6E6E6;
+$PRESHEADHEIGHT:50PX; //医嘱录入多行表头行高度，未加底部1px边框，总高应是51
+$LINEHEIGHT:43PX; ///多行表格行高度，未加底部1px边框，总高应是44   （内容是多行的情况下 或者 表头是多行的情况下）
+$DETAILLINEHEIGHT:36PX; //表格2,行高，未加底部1px边框，总高应是37 （内容是单行的情况下 或者 表头是单行的情况下）
+$GRIDHEADERBG: #F4F4F4;
+$GRIDHEADERBD:#E8E8E8;
+$ROWOVERBG:#EDF6FF;
+$ROWSELECTEDBG:#DAEDFF;
+
+/***** 门诊特定的背景颜色  ********/
+$CLINICBGCOLOR:#EBF2F9;
+$CLINICNAVBG:#E5E5E5;
+
+/***** ZOEUI树样式  ********/
+$TREELINEHEIGHT: 28px; //树的行高
+/***** 弹窗公共样式  ********/
+$POPUPWINDOWH:37PX;//弹窗头部高度，未加下边框1px，总高应是37px
+$POPUPWINFOOT:50PX;//弹窗底部高度，未加border-top：1px，总高51px
+@mixin transform ($transform) {
+  transform:$transform;
+  -ms-transform:$transform;
+  -moz-transform:$transform;
+  -webkit-transform:$transform;
+  -o-transform:$transform;
+}
+/***** 图标公共样式  ********/
+$ICONFONTNORMAL:16px; //应用于普通内容16像素的图标
+$ICONFONTRIGHT:18px; //应用于菜单框架右边辅助区图标大小
+$ICONFONTMIN:12px; //应用于最小的图标
+$ICONFONTMINTWO:13px; //应用于比最小的图标大1px
+$ICONFONTBTN:23px; //应用于常用按钮的图标
+$DIALOGICONFONT:64px; //应用于弹窗图标
+
+/**正在读卡中**/
+$TIPBORDERCOLOR: #FFDBAF;
+$TIPCOLOR: #EC9D38;
+//$TIPBGCOLOR: #FFF6CF;
+$TIPBGCOLOR: #FFEFD7;
+
+//select下拉框
+$SELECTITEMHEIGHT: 33px; //下拉框的行高
+$SELECTITEMBORDER: #F4F4F4; //下拉框的边框颜色
+$SELECTITEMHOVER: #F5FCFF;  //下拉框的悬浮的背景色
+
+$SHADOWVALUE:0 1px 6px rgba(0,0,0,.26); //弹窗边框阴影
+
+//错误提示语
+$ERRORCOLOR:#FF7E00;

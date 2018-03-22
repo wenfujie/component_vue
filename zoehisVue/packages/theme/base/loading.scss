@@ -1,0 +1,52 @@
+@keyframes loading-rotate {
+  100% {
+    @include transform(rotate(360deg))
+  }
+}
+.zoehis_loading_fade_enter, .zoehis_loading_fade_leave_active{opacity: 0;}
+.zoehis_loading_absolute{}
+.zoehis_loading_mask{
+  position: absolute;
+  overflow: hidden;
+  z-index: 10000;
+  background: none;
+  margin: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .0s;
+  &.is_fullscreen{position: fixed;}
+}
+.zoehis_loading_spinner{
+  top: 50%;
+  margin-top: -11px;
+  position: absolute;
+  width: 100%;
+  &.zoehis_loading_spinner_hasFont{
+    margin-top: -28px;
+  }
+  &.zoehis_loading_index{z-index: 1000000;}
+}
+.zoehis_loading_logo{
+  border: 2px dashed $MAINCOLOR;
+  border-radius: 100%;
+  width: 21px;
+  height: 21px;
+  margin: 0 auto;
+  animation: loading-rotate 2s linear infinite;
+  animation-name: loading-rotate;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
+}
+.zoehis_loading_font{
+  color: $MAINCOLOR;
+  text-align: center;
+  font-size: $FONTMAINS;
+}
+

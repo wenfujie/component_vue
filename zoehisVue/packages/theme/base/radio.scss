@@ -1,0 +1,23 @@
+
+.zoehis_radio_all{
+  cursor: pointer;
+  span{
+    .zoehis_radio{
+      color: $MAINCOLOR;
+      &.zoehis_disabled{color: $FONTAUXILIARY;  background-color: $GRIDHEADERBG;  border-radius: 50%;}
+      &.zoehis_disabled_check{background-color: transparent;}
+      &.zoehis_focus{outline: 1px dotted $MAINSHADOW;}
+      &:focus{outline: none;}
+    }
+  }
+}
+.zoehis_radio_original{
+  opacity:0;  outline: none;  position: absolute;  z-index: -1;  top: 0;  left: 0;  right: 0;  bottom: 0;  margin: 0;
+}
+.zoehis_radio_input{
+  white-space: nowrap;  cursor: pointer;  outline: none;  display: inline-block;
+  line-height: 1;  position: relative;  vertical-align: middle;
+}
+.zoehis_radio_label{
+  font-size: $FONTMAINS;  padding-left: 8px; vertical-align: middle;
+}

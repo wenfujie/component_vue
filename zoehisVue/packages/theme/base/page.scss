@@ -1,0 +1,56 @@
+.zoehis_page{
+  border-top: 1px solid $MAINBORDERLINES;  border-bottom: 1px solid $MAINBORDERLINES; width: 100%;
+}
+.zoehis_page_content{
+  margin: 0 auto;  width: 420px;
+  &.zoehis_page_content_width{width: 240px;}
+}
+.zoehis_page_size, .zoehis_page_total, .zoehis_page_current{
+  float: left;  font-size: $FONTINSTRUCTIONS;  color: black;
+}
+.zoehis_page_size{
+  margin-right: 20px;
+  & span{line-height: 32px;}
+  &.zoehis_page_size_select{line-height: 12px;}
+}
+.zoehis_page_size_select{
+  display: inline-block;  margin: 0 15px;  width: 22px;  border-bottom: 1px solid $MAINNOEDITOR;  line-height: 20px;
+  text-align: center;  cursor: pointer;  position: relative;
+}
+.zoehis_page_total{
+  min-width: 100px;  line-height: 32px;
+  & span{margin: 0 7px;}
+}
+.zoehis_page_current{
+  width: 120px;
+  .zoehis_page_current_wrap{
+    float: right;
+  line-height: 32px;
+  & input{width: 16px;  border: none;  border-bottom: 1px solid $MAINNOEDITOR;    text-align: center;
+    font-size: $FONTINSTRUCTIONS;  outline: none;  color: $FONTFOCUS;
+    &:focus{border-color: $FONTFOCUS;}
+    &.zoehis_page_input_invariant{color: $FONTMAIN;  border-bottom: none;}
+    &[disabled]{background-color: transparent;}
+  }
+  & i{font-size: $ICONFONTMINTWO;   cursor: pointer;}
+  }
+}
+.zoehis_page_bias{
+  margin: 0 12px 0 5px;
+}
+.zoehis_page_count{
+  margin-right: 3px;
+}
+.zoehis_page_prev{
+  color: $MAINNOEDITOR;
+  &.zoehis_page_prev_false{color: $MAINCOLOR;}
+}
+.zoehis_page_list{
+  position: absolute;  left: 0;  top: 0;  -webkit-box-shadow: 0 0 5px $BOXSHADOW;  box-shadow: 0 0 5px $BOXSHADOW;
+  -moz-box-shadow: 0 0 5px $BOXSHADOW;  width: 22px;  list-style-type: none;  margin: 0;  padding: 0;
+  margin-top: 20px;  z-index: 2000;  background-color: $FONTWHITE;
+}
+.zoehis_page_li{
+  text-align: center;  line-height: 25px;  text-align: center;  font-size: $FONTINSTRUCTIONS;  border-bottom: 1px solid $GRIDHEADERBG;
+  &:hover{background-color: $FONTFOCUS;  color: $FONTWHITE;}
+}

@@ -1,0 +1,43 @@
+$border:1px solid $MAINBORDERLINES;
+.zoehis_dialog_wrapper{
+  position: fixed; top: 0; left: 0; bottom: 0; right: 0; margin: 0; overflow: auto; z-index: 200; outline: none;
+}
+.zoehis_dialog{ outline: none;
+  position: absolute; left: 50%; top: 50%; background: $MAINBG; box-sizing: border-box;box-shadow: $SHADOWVALUE;
+  font-size:$FONTMAINS;
+  .zoehis_dialog_header{
+    border-bottom: $border; background: $MAINAUXILIARY; height: $POPUPWINDOWH; line-height: $POPUPWINDOWH;
+    font-weight: bold; text-align: center; color: $FONTRPTITLE; position: relative; cursor: move;
+    + .zoehis_scrollbar .zoehis_dialog_body{cursor: default;}
+    .zoehis_header_close{position: absolute; right: 8px; cursor: pointer;}
+  }
+  .zoehis_dialog_body{
+    position: relative; cursor: move;
+  }
+  .zoehis_dialog_footer{
+    border-top: $border; padding: 10px; text-align: right; position: relative;
+  }
+  .zoehis_dialog_error{
+    padding: 16px 13px 16px 16px; max-height: 215px; position: relative; box-sizing: border-box;
+    background: $MAINAUXILIARY;
+  }
+  .zoehis_dialog_error_toggle{
+    position: absolute; left: 16px; top: 15px; color: $MAINCOLOR; cursor: pointer;
+    -webkit-user-select: none; -ms-user-select: none;-moz-user-select: none;
+    i{font-size: $FONTINSTRUCTIONS; padding-right: 5px;}
+  }
+  .zoehis_dialog_error_detail{
+    max-height: 162px; position: relative; overflow-x: hidden; overflow-y: auto; word-break: break-all;
+    //滚动条
+    &::-webkit-scrollbar-thumb{ background:$MAINBORDERLINES;border-radius:3px;
+      &:hover{background: $FONTRPTITLE; cursor: pointer;}
+    }
+    &::-webkit-scrollbar{width: 6px;}
+  }
+  .zoehis_dialog_error_send{
+    line-height: 24px; font-size: $FONTINSTRUCTIONS;color: $MAINCOLOR; cursor: pointer;
+  }
+}
+.v-modal{
+  position: fixed; left: 0; top: 0; width: 100%; height: 100%; opacity: .1; background: $FONTMAIN;
+}

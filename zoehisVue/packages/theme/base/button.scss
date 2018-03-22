@@ -1,0 +1,41 @@
+.zoehis_button{
+  font-family: $FONTARIAL,$FONTSUN;
+  display: inline-block; line-height: 1; white-space: nowrap; cursor: pointer; background: $MAINBG; border: 1px solid $MAINCOLOR; position: relative;
+  -webkit-appearance: none; text-align: center; box-sizing: border-box; outline: none; margin: 0; -moz-user-select: none; min-width: 60px;
+  -webkit-user-select: none; -ms-user-select: none; padding: 6px 9px; font-size: $FONTMAINS; border-radius: 15px; color: $FONTMAIN; height: 30px;
+  &:focus{border: 2px $BOTTONACTIVE solid; padding: 5px 8px;
+    &.zoehis_button_small{
+      padding: 3px 7px;
+    }
+  }
+  &:hover{
+    background: $MAINCOLOR; color:$FONTWHITE;
+    .zoehis_button_icon{color: $FONTWHITE;}
+  }
+  &.zoehis_disabled{
+    background: $MENUAIDE; color:$MAINNOEDITOR; border-color: $MENUAIDE; cursor: default;
+    &:hover{background: $MENUAIDE; color:$MAINNOEDITOR; border-color: $MENUAIDE;}
+    .zoehis_button_icon{color: $MAINNOEDITOR;}
+  }
+  + .zoehis_button{margin-left: 10px;}
+  &.zoehis_button_small{
+    border-radius: 12px; padding: 4px 8px; height: 26px;
+  }
+  .zoehis_button_icon{color: $MAINCOLOR;}
+  //有图标按钮
+  &.has_icon{min-width: 68px;}
+};
+.zoehis_button_primary{
+  background: $MAINCOLOR; color:$FONTWHITE;
+  &:hover{background: $MAINNAV; color:$FONTWHITE;}
+  .zoehis_button_icon{color: $FONTWHITE;}
+}
+.zoehis_button_desc{
+  font-size: $FONTMAINS;
+}
+.zoehis_button_keyboard{
+  text-decoration: underline;  font-size: $FONTMAINS;
+}
+.zoehis_button_group{
+  text-align: right;
+}
